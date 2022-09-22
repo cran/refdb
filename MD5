@@ -1,10 +1,10 @@
-961bed162216aef2cd538144cce66aa4 *DESCRIPTION
+91bbf6efe4b84bdb4af545063f85b68c *DESCRIPTION
 4722768d6f44efb8f024aae67ceaf121 *NAMESPACE
 6bd6b443ab86a8b2052d61c96e726c0e *R/fields.R
 ea4d57d346f2110d4fee3e98f0300149 *R/import_BOLD.R
 b1007b6ee6f387e57bcfc6436a930f4b *R/import_NCBI.R
 7e009e7f2da048dac063d6365bc5c2e6 *R/refdb-package.R
-115deac8b3f9fd1ac18cdf58709dafea *R/refdb_checks.R
+0ef74b5803da21c377bce0dfbd125b7a *R/refdb_checks.R
 58b267bade72b461633f6ad10727dd32 *R/refdb_clean.R
 573f21a8620eb8dbc9804139942ea03c *R/refdb_export.R
 825ba12f6707ae7aec10af6d3acd4626 *R/refdb_fill_taxo.R
@@ -17,7 +17,7 @@ cdc4b1e4a76b34146780eea128be08c1 *R/refdb_sample.R
 10d4d0da587dbc555cf0d7d958c3e60e *build/vignette.rds
 f972f802106f5128aacdbda466d3983e *inst/doc/intro_refdb.R
 a33be2a7b7277c79b55c66924e36fde8 *inst/doc/intro_refdb.Rmd
-1b4249173bd8ecbfe40c84273048aecd *inst/doc/intro_refdb.html
+4408b33c11f39a9d9aa9fb9303cea74c *inst/doc/intro_refdb.html
 81ebb06c721c39e5541793e29efc6c2d *inst/doc/ncbi_bold.Rmd
 90f0c8a9da4f8901a6282be2876fa706 *inst/doc/ncbi_bold.html
 c7bfd8f0f3b0f1c1a7ab6b36f7babd9c *inst/extdata/baetidae_bold.csv

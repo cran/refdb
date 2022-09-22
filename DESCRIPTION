@@ -1,7 +1,7 @@
 Package: refdb
 Type: Package
 Title: A DNA Reference Library Manager
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Francois",
              family = "Keck",
@@ -31,7 +31,7 @@ Suggests: testthat (>= 3.0.0), covr, DT, knitr, forcats
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-09-15 11:16:33 UTC; ecoadmin
+Packaged: 2022-09-22 15:51:27 UTC; ecoadmin
 Author: Francois Keck [aut, cre, cph] (<https://orcid.org/0000-0002-3323-4167>)
 Repository: CRAN
-Date/Publication: 2022-09-19 08:26:12 UTC
+Date/Publication: 2022-09-22 17:00:05 UTC
