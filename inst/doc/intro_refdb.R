@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -7,21 +7,21 @@ knitr::opts_chunk$set(
 )
 
 ## ----setup, eval=FALSE--------------------------------------------------------
-#  library(refdb)
-#  library(tidyverse)
+# library(refdb)
+# library(tidyverse)
 
-## ---- echo=FALSE, message=FALSE-----------------------------------------------
+## ----echo=FALSE, message=FALSE------------------------------------------------
 library(refdb)
 library(readr)
 library(ggplot2)
 library(dplyr)
 library(forcats)
 
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 lib <- read_csv(system.file("extdata", "ephem.csv", package = "refdb"))
 
-## ---- eval=FALSE--------------------------------------------------------------
-#  lib <- read_csv("my_path/ephem.csv")
+## ----eval=FALSE---------------------------------------------------------------
+# lib <- read_csv("my_path/ephem.csv")
 
 ## -----------------------------------------------------------------------------
 lib <- refdb_set_fields(lib,
@@ -54,7 +54,7 @@ head(lib)
 lib_nogap <- refdb_clean_seq_remove_gaps(lib)
 head(lib_nogap)
 
-## ---- fig.width=4.5, fig.height=3.5-------------------------------------------
+## ----fig.width=4.5, fig.height=3.5--------------------------------------------
 refdb_plot_seqlen_hist(lib)
 
 ## -----------------------------------------------------------------------------
@@ -79,26 +79,26 @@ lib %>%
   ylab("Number of records") +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))
 
-## ---- message=FALSE, warning=FALSE--------------------------------------------
+## ----message=FALSE, warning=FALSE---------------------------------------------
 refdb_plot_tax_treemap(lib)
 
-## ---- message=FALSE, warning=FALSE--------------------------------------------
+## ----message=FALSE, warning=FALSE---------------------------------------------
 refdb_plot_tax_tree(lib)
 
-## ---- message=FALSE, warning=FALSE--------------------------------------------
+## ----message=FALSE, warning=FALSE---------------------------------------------
 lib <- refdb_set_fields(lib, latitude = "lat", longitude = "lon")
 refdb_plot_map(lib)
 
-## ---- eval=FALSE--------------------------------------------------------------
-#  refdb_report(lib)
+## ----eval=FALSE---------------------------------------------------------------
+# refdb_report(lib)
 
-## ---- eval=FALSE--------------------------------------------------------------
-#  write_csv(lib, "my_reference_library.csv")
+## ----eval=FALSE---------------------------------------------------------------
+# write_csv(lib, "my_reference_library.csv")
 
-## ---- eval=FALSE--------------------------------------------------------------
-#  refdb_write_fields(lib, "my_reference_fields.yml")
+## ----eval=FALSE---------------------------------------------------------------
+# refdb_write_fields(lib, "my_reference_fields.yml")
 
-## ---- eval=FALSE--------------------------------------------------------------
-#  lib <- read_csv("my_reference_library.csv")
-#  lib <- refdb_set_fields(lib, config_yaml = "my_reference_fields.yml")
+## ----eval=FALSE---------------------------------------------------------------
+# lib <- read_csv("my_reference_library.csv")
+# lib <- refdb_set_fields(lib, config_yaml = "my_reference_fields.yml")
 
